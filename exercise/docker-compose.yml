@@ -1,0 +1,29 @@
+version: '2'
+services:
+  mariadb:
+    
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_USER=bn_magento
+      - MARIADB_DATABASE=bitnami_magento
+    
+  magento:
+    
+    environment:
+      - MAGENTO_HOST=localhost
+      - MAGENTO_DATABASE_HOST=mariadb
+      - MAGENTO_DATABASE_PORT_NUMBER=3306
+      - MAGENTO_DATABASE_USER=bn_magento
+      - MAGENTO_DATABASE_NAME=bitnami_magento
+      - ELASTICSEARCH_HOST=elasticsearch
+      - ELASTICSEARCH_PORT_NUMBER=9200
+      - ALLOW_EMPTY_PASSWORD=yes
+    
+    depends_on:
+      - mariadb
+      - elasticsearch
+  elasticsearch:
+    
+    
+volumes:
+  
