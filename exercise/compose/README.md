@@ -1,6 +1,6 @@
-#Mikroservisler:
+# Mikroservisler:
 
-##MariaDB:
+## MariaDB:
 
 İmaj sahibi: bitnami
 İmaj ismi: mariadb
@@ -8,7 +8,7 @@
 
 Volume mount path: /bitnami/mariadb
 
-##Magento:
+## Magento:
 
 İmaj sahibi: bitnami
 İmaj ismi: magento
@@ -16,7 +16,7 @@ Volume mount path: /bitnami/mariadb
 
 Volume mount path: /bitnami/magento
 
-Portlar: 
+### Portlar: 
 
 LocalPort1: 80
 ContainerPort1: 8080
@@ -24,7 +24,7 @@ ContainerPort1: 8080
 LocalPort2: 443
 ContainerPort2: 8443
 
-##Elasticsearch:
+## Elasticsearch:
 
 İmaj sahibi: bitnami
 İmaj ismi: elasticsearch
@@ -32,4 +32,4 @@ ContainerPort2: 8443
 
 Volume mount path: /bitnami/elasticsearch
 
-##Not: Her bir servisin kendine ait bir volume’a sahip olması gerekmektedir. Bu nedenle belirlediğiniz volume isimlerini Yaml dosyasının en sonunda “volumes:” başlığı altında belirtmeyi unutmayınız.
+### Not: Her bir servisin kendine ait bir volume’a sahip olması gerekmektedir. Bu nedenle belirlediğiniz volume isimlerini Yaml dosyasının en sonunda “volumes:” başlığı altında belirtmeyi unutmayınız.
