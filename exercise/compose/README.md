@@ -4,7 +4,7 @@
 
 İmaj sahibi: bitnami
 İmaj ismi: mariadb
-İmaj versiyonu: 10.3
+İmaj versiyonu: 10.4
 
 Volume mount path: /bitnami/mariadb
 
@@ -28,7 +28,7 @@ ContainerPort2: 8443
 
 İmaj sahibi: bitnami
 İmaj ismi: elasticsearch
-İmaj versiyonu: 6
+İmaj versiyonu: 7
 
 Volume mount path: /bitnami/elasticsearch
 
